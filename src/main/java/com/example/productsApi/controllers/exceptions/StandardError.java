@@ -1,0 +1,49 @@
+package com.example.productsApi.controllers.exceptions;
+
+import java.io.Serializable;
+import java.time.Instant;
+
+public class StandardError implements Serializable{
+
+	private static final long serialVersionUID = 1L;
+	
+	//this class was created to store the errors that will happen at the API
+	private Instant timeStamp;
+	private Integer status;
+	private String error;
+	private String mensagem;
+	private String path;
+	public Instant getTimeStamp() {
+		return timeStamp;
+	}
+	public void setTimeStamp(Instant timeStamp) {
+		this.timeStamp = timeStamp;
+	}
+	public Integer getStatus() {
+		return status;
+	}
+	public void setStatus(Integer status) {
+		this.status = status;
+	}
+	public String getError() {
+		return error;
+	}
+	public void setError(String error) {
+		this.error = error;
+	}
+	public String getMensagem() {
+		return mensagem;
+	}
+	public void setMensagem(String mensagem) {
+		this.mensagem = mensagem;
+	}
+	public String getPath() {
+		return path;
+	}
+	public void setPath(String path) {
+		this.path = path;
+	}
+	
+	
+
+}
