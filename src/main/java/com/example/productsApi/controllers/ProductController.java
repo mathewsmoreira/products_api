@@ -55,10 +55,10 @@ public class ProductController {
 	
 	@PutMapping("/products/{id}")
 	//this method is used to update the information of one product that the user send via HTTP PUT method
-	public ResponseEntity<Object> updateProducts(@PathVariable(value = "id") UUID id) {
+	public ResponseEntity<Object> updateProducts(@PathVariable(value = "id") UUID id, @RequestBody @Valid ProductRecordDto productRecordDto) {
 		// the return is a responseEntity with code 200 and the data from the object that was saved
 		// if the id is not found in the data base it will return a responseEntity with code 404.
-		return ResponseEntity.status(HttpStatus.OK).body(productService.updateProduct(id));
+		return ResponseEntity.status(HttpStatus.OK).body(productService.updateProduct(id,productRecordDto));
 	}
 	
 	@DeleteMapping("/products/{id}")
