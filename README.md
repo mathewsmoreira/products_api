@@ -14,8 +14,8 @@ POST METHOD
 URI http://217.196.62.11:8181/products
 
 http status</br>
-2xx created</br>
-5xx internal Server Error</br>
+2xx Created</br>
+5xx Internal Server Error</br>
 
 Body JSON
 
@@ -38,9 +38,9 @@ GET METHOD all products
 URI http://217.196.62.11:8181/products
 
 http status</br>
-2xx OK</br>
-4xx not found</br>
-5xx 5xx internal Server Error</br>
+2xx Ok</br>
+4xx Not Found</br>
+5xx 5xx Internal Server Error</br>
 
 Response
 
@@ -63,9 +63,9 @@ GET METHOD one product
 URI http://217.196.62.11:8181/products/UUID
 
 http status</br>
-2xx OK</br>
-4xx not found</br>
-5xx internal Server Error</br>
+2xx Ok</br>
+4xx Not Found</br>
+5xx Internal Server Error</br>
 
 RESPONSE
 
@@ -85,9 +85,9 @@ PUT METHOD
 URI http://217.196.62.11:8181/products/UUID<br>
 
 http status</br>
-2xx OK</br>
-4xx not found</br>
-5xx internal Server Error</br>
+2xx Ok</br>
+4xx Not Found</br>
+5xx Internal Server Error</br>
 
 RESPONSE
 
@@ -102,9 +102,9 @@ DELETE METHOD
 URI http://217.196.62.11:8181/products/UUID
 
 http status</br>
-2xx OK</br>
-4xx not found</br>
-5xx internal Server Error</br>
+2xx Ok</br>
+4xx Not Found</br>
+5xx Internal Server Error</br>
 
 RESPONSE
 
