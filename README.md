@@ -18,18 +18,19 @@ http status
 5xx internal Server Error
 
 Body JSON
-{
-    "name": "Product name",
-    "valeu": 100.00
-}
+
+	{
+	    "name": "Product name",
+	    "valeu": 100.00
+	}
 
 RESPONSE
 
-{
-    "idProduct": "UUID",
-    "name": "Loren Ipsum",
-    "value": 5500.00
-}
+	{
+	    "idProduct": "UUID",
+	    "name": "Loren Ipsum",
+	    "value": 5500.00
+	}
 
 
 GET METHOD all products
@@ -43,19 +44,19 @@ http status
 
 Response
 
-[
-    {
-        "idProduct": "UUID",
-        "name": "Loren Ipsum",
-        "value": 5500.00,
-        "links": [
-            {
-                "rel": "self",
-                "href": "http://217.196.62.11:8181/products/UUID"
-            }
-        ]
-    }
-]
+	[
+	    {
+	        "idProduct": "UUID",
+	        "name": "Loren Ipsum",
+	        "value": 5500.00,
+	        "links": [
+	            {
+	                "rel": "self",
+	                "href": "http://217.196.62.11:8181/products/UUID"
+	            }
+	        ]
+	    }
+	]
 
 GET METHOD one product
 
@@ -68,33 +69,33 @@ http status
 
 RESPONSE
 
-{
-    "idProduct": "UUID",
-    "name": "Loren Ipsum",
-    "value": 5500.00,
-    "_links": {
-        "self": {
-            "href": "http://217.196.62.11:8181/products"
-        }
-    }
-}
+	{
+	    "idProduct": "UUDI",
+	    "name": "Loren Ipsum",
+	    "value": 5000.00,
+	    "_links": {
+	        "self": {
+	            "href": "http://localhost:8181/products"
+	        }
+	    }
+	}
 
 PUT METHOD
 
 URI http://217.196.62.11:8181/products/UUID
 
 http status
-2xx OK
-4xx not found
-5xx internal Server Error
+2xx OK</br>
+4xx not found</br>
+5xx internal Server Error</br>
 
 RESPONSE
 
-{
-    "idProduct": "UUID",
-    "name": "Loren Ipsum",
-    "value": 4400.00
-}
+	{
+	    "idProduct": "UUID",
+	    "name": "Loren Ipsum",
+	    "value": 4400.00
+	}
 
 DELETE METHOD
 
@@ -108,3 +109,4 @@ http status
 RESPONSE
 
 Product deleted successfully.
+
