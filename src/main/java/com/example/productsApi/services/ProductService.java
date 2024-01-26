@@ -56,10 +56,10 @@ public class ProductService {
 	
 	//this method captured the value send with PUT method, first it will search in the data-base to be sure that the id exists
 	//if not it will throw a exception that will be treat at the ControllerExceptionHandler.
-	public ProductModel updateProduct(UUID id){
+	public ProductModel updateProduct(UUID id,ProductRecordDto productRecordDto){
 		ProductModel productO = productRepository.findById(id).orElseThrow(
 				() -> new EntityNotFoundExceptions("Failed to update product id = '"+ id+"' product not found in the data base."));
-		
+		BeanUtils.copyProperties(productRecordDto, productO);
 		return productRepository.save(productO);
 	}
 	
